@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/ClassValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/StringValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/array/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/common/IsNotNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/common/IsNull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/number/DoubleRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/number/FloatRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/number/IntRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/number/IsNegative.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/number/IsPositive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/number/LongRange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/string/Contains.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/string/Equals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/string/EqualsIgnoreCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/string/IsDateString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/string/IsEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/string/IsLowerCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/string/IsNotEmpty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/string/IsUpperCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/string/NotContains.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/utils/ArrayUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/utils/NumberUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/ArrayValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/NumberValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/StringValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/ValidatorRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/array/SizeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/common/IsNotNullValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/common/IsNullValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/DoubleRangeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/FloatRangeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IntRangeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsNegativeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsPositiveValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/LongRangeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/ContainsValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/EqualsIgnoreCaseValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/EqualsValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsDateStringValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsEmailValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsLowerCaseValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsNotEmptyValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsUpperCaseValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/NotContainsValidator.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IvhhxUVmJb2ZlUsp0zIMlgYmJ5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Alexis/OneDrive/Escritorio/portafolio/class-validator-main/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.randomme.classvalidator.validators.string" />
+      <recent name="com.randomme.classvalidator.validators.number" />
+      <recent name="com.randomme.classvalidator.validators.common" />
+      <recent name="com.randomme.classvalidator.annotations.string" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.randomme.classvalidator.main" />
+      <module name="Class-Validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.randomme.classvalidator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="" />
+      <created>1671068086832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671068086832</updated>
+      <workItem from="1671068089699" duration="9530000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
