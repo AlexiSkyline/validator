@@ -14,6 +14,11 @@ public class IsNotEmptyValidator extends StringValidator {
     @Override
     public boolean isValid( Field field, String value ) {
         IsNotEmpty notEmpty = field.getAnnotation( IsNotEmpty.class );
-        return notEmpty.trim() ? !value.trim().isEmpty() : !value.isEmpty();
+        boolean status = notEmpty.trim() ? !value.trim().isEmpty() : !value.isEmpty();
+        if( status ) {
+            this.message = String.format( "The property '%s' is empty.", field.getName() );
+            return true;
+        }
+        return false;
     }
 }

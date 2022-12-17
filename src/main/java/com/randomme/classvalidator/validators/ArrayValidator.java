@@ -3,6 +3,7 @@ package com.randomme.classvalidator.validators;
 import java.lang.reflect.Field;
 
 public abstract class ArrayValidator implements Validator {
+    protected String message;
     public abstract boolean isValid( Field field, Object[] value );
 
     public boolean isValid( Field field, Object value ) {
@@ -11,5 +12,10 @@ public abstract class ArrayValidator implements Validator {
         }
 
         return true;
+    }
+
+    @Override
+    public String getMessage() {
+        return this.message;
     }
 }

@@ -14,6 +14,10 @@ public class IsDateStringValidator extends StringValidator {
 
     @Override
     public boolean isValid( Field field, String value ) {
-        return StringUtils.isDateString( value );
+        if( !StringUtils.isDateString( value ) ) {
+            this.message = String.format( "The date format of the '%s' property is incorrect ().", field.getName() );
+            return false;
+        }
+        return true;
     }
 }

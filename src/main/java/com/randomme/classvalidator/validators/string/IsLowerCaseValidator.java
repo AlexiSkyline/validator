@@ -14,6 +14,10 @@ public class IsLowerCaseValidator extends StringValidator {
 
     @Override
     public boolean isValid( Field field, String value ) {
-        return StringUtils.isLowerCase( value );
+        if( !StringUtils.isLowerCase( value ) ) {
+            this.message = String.format( "The value of the property '%s' is not Lowercase", field.getName() );
+            return false;
+        }
+        return true;
     }
 }

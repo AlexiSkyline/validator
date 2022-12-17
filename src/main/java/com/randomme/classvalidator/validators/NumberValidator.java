@@ -3,6 +3,7 @@ package com.randomme.classvalidator.validators;
 import java.lang.reflect.Field;
 
 public abstract class NumberValidator implements Validator {
+    protected String message;
     public abstract boolean isValid( Field field, int value );
     public abstract boolean isValid( Field field, long value );
     public abstract boolean isValid( Field field, float value );
@@ -26,5 +27,10 @@ public abstract class NumberValidator implements Validator {
         }
 
         return true;
+    }
+
+    @Override
+    public String getMessage() {
+        return this.message;
     }
 }

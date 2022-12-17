@@ -14,6 +14,10 @@ public class IsEmailValidator extends StringValidator {
 
     @Override
     public boolean isValid( Field field, String value ) {
-        return StringUtils.isEmail( value );
+        if( !StringUtils.isEmail( value ) ) {
+            this.message = String.format( "The format of the email property '%s' is incorrect.", field.getName() );
+            return false;
+        }
+        return true;
     }
 }

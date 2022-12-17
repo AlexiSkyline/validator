@@ -2,7 +2,6 @@ package com.randomme.classvalidator.validators;
 
 import com.randomme.classvalidator.validators.array.SizeValidator;
 import com.randomme.classvalidator.validators.common.IsNotNullValidator;
-import com.randomme.classvalidator.validators.common.IsNullValidator;
 import com.randomme.classvalidator.validators.number.*;
 import com.randomme.classvalidator.validators.string.*;
 
@@ -17,7 +16,6 @@ public class ValidatorRegistry {
         register( new SizeValidator() );
 
         register( new IsNotNullValidator() );
-        register( new IsNullValidator() );
 
         register( new IntRangeValidator() );
         register( new DoubleRangeValidator() );

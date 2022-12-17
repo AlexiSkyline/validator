@@ -7,16 +7,16 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 
 public class ClassValidator {
-    public Error validate(Field field, Object instance) {
+    public Error validate( Field field, Object instance ) {
         try {
-            Object value = field.get(instance);
+            Object value = field.get( instance );
 
             for ( Annotation annotation : field.getAnnotations() ) {
-                Validator validator = ValidatorRegistry.getValidatorForClass(annotation.annotationType());
+                Validator validator = ValidatorRegistry.getValidatorForClass( annotation.annotationType() );
 
                 if ( validator != null ) {
                     if ( !validator.isValid( field, value ) ) {
-                        return new Error( field.getName(), value, validator.getName() );
+                        return new Error( field.getName(), value, validator.getName(), validator.getMessage() );
                     }
                 }
             }
@@ -27,7 +27,7 @@ public class ClassValidator {
         return null;
     }
 
-    public Result validate(Object instance) {
+    public Result validate( Object instance ) {
         Result result = new Result();
         Class<?> clazz = instance.getClass();
 

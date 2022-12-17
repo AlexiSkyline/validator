@@ -15,6 +15,12 @@ public class SizeValidator extends ArrayValidator {
     @Override
     public boolean isValid( Field field, Object[] value ) {
         Size isArrayLength = field.getAnnotation( Size.class );
-        return ArrayUtils.isLength( value, isArrayLength.min(), isArrayLength.max() );
+        if( !ArrayUtils.isLength( value, isArrayLength.min(), isArrayLength.max() ) ) {
+            this.message = String.format( "The size of the '%s' Array must have a minimum of '%d' and a maximum of '%d' characters."
+                    , field.getName(), isArrayLength.min(), isArrayLength.max() );
+            return false;
+        }
+
+        return true;
     }
 }

@@ -9,4 +9,5 @@ public interface Validator {
     public default String getName() {
         return this.getAnnotation().getSimpleName();
     }
+    public String getMessage();
 }

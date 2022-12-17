@@ -14,6 +14,10 @@ public class EqualsValidator extends StringValidator {
     @Override
     public boolean isValid( Field field, String value ) {
         Equals annotation = field.getAnnotation( Equals.class );
-        return value.equals( annotation.value() );
+        if( !value.equals( annotation.value() ) ) {
+            this.message = String.format( "The property '%s' with the value '%s' is not equal to '%s'.", field.getName(), annotation.value(), value  );
+            return false;
+        }
+        return true;
     }
 }

@@ -4,11 +4,13 @@ public class Error {
     private String fieldName;
     private Object fieldValue;
     private String validatorName;
+    private String message;
 
-    public Error(String fieldName, Object fieldValue, String validatorName ) {
+    public Error( String fieldName, Object fieldValue, String validatorName, String message ) {
         this.fieldName = fieldName;
         this.fieldValue = fieldValue;
         this.validatorName = validatorName;
+        this.message = message;
     }
 
     public String getFieldName() {
@@ -24,7 +26,7 @@ public class Error {
     }
 
     public String getMessage() {
-        return "Field " + this.fieldName + " failed " + this.validatorName + " validator with value " + this.fieldValue + ". ";
+        return this.message;
     }
 
     public Exception getException() {

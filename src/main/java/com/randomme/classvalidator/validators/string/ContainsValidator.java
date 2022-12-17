@@ -14,6 +14,10 @@ public class ContainsValidator extends StringValidator {
     @Override
     public boolean isValid( Field field, String value ) {
         Contains annotation = field.getAnnotation( Contains.class );
-        return value.contains( annotation.value() );
+        if( !value.contains( annotation.value() ) ) {
+            this.message = String.format( "The Property '%s' does not contain %s", field.getName(), annotation.value() );
+            return false;
+        }
+        return true;
     }
 }

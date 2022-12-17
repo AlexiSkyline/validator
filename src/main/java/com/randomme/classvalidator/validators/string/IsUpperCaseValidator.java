@@ -14,6 +14,10 @@ public class IsUpperCaseValidator extends StringValidator {
 
     @Override
     public boolean isValid( Field field, String value ) {
-        return StringUtils.isUpperCase( value );
+        if( !StringUtils.isUpperCase( value ) ) {
+            this.message = String.format( "The value of the property '%s' is not UpperCase", field.getName() );
+            return false;
+        }
+        return true;
     }
 }
