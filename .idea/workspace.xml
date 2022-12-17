@@ -4,40 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="Example Class Validator">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/main.java" afterDir="false" />
+    <list default="true" id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="added error messages">
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/array/ArrayCorrect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/array/ArrayError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/TestArrayValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/ClassValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/ClassValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/Error.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/array/Size.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/array/Size.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/common/IsNotNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/common/IsNotNull.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/annotations/common/IsNull.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/ArrayValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/ArrayValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/NumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/NumberValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/StringValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/StringValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/ValidatorRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/ValidatorRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/array/SizeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/array/SizeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/common/IsNotNullValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/common/IsNotNullValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/common/IsNullValidator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/DoubleRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/DoubleRangeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/FloatRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/FloatRangeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IntRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IntRangeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsNegativeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsNegativeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsPositiveValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsPositiveValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/LongRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/LongRangeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/ContainsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/ContainsValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/EqualsIgnoreCaseValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/EqualsIgnoreCaseValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/EqualsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/EqualsValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsDateStringValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsDateStringValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsEmailValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsEmailValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsLowerCaseValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsLowerCaseValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsNotEmptyValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsNotEmptyValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsUpperCaseValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/IsUpperCaseValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/NotContainsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/NotContainsValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,21 +51,22 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="data" />
       <recent name="com.randomme.classvalidator.validators.string" />
       <recent name="com.randomme.classvalidator.validators.number" />
       <recent name="com.randomme.classvalidator.validators.common" />
       <recent name="com.randomme.classvalidator.annotations.string" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestArrayValidator.TestArrayValidatorIncorrect">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.randomme.classvalidator.main" />
       <module name="Class-Validator" />
@@ -107,8 +80,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestArrayValidator$TestArrayValidatorCorrect.SizeInTheRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Class-Validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.TestArrayValidator" />
+      <option name="MAIN_CLASS_NAME" value="test.TestArrayValidator$TestArrayValidatorCorrect" />
+      <option name="METHOD_NAME" value="SizeInTheRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestArrayValidator.TestArrayValidatorCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Class-Validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestArrayValidator" />
+      <option name="METHOD_NAME" value="TestArrayValidatorCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestArrayValidator.TestArrayValidatorIncorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Class-Validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestArrayValidator" />
+      <option name="METHOD_NAME" value="TestArrayValidatorIncorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestArrayValidator.TestArrayValidatorIncorrect" />
+        <item itemvalue="JUnit.TestArrayValidator.TestArrayValidatorCorrect" />
+        <item itemvalue="JUnit.TestArrayValidator$TestArrayValidatorCorrect.SizeInTheRange" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -122,7 +146,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671068086832</updated>
       <workItem from="1671068089699" duration="15577000" />
-      <workItem from="1671249030573" duration="4985000" />
+      <workItem from="1671249030573" duration="8542000" />
     </task>
     <task id="LOCAL-00001" summary="Example Class Validator">
       <created>1671078163009</created>
@@ -131,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671078163009</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added error messages">
+      <created>1671254089617</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671254089617</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +181,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Example Class Validator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Example Class Validator" />
+    <MESSAGE value="added error messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="added error messages" />
   </component>
 </project>
