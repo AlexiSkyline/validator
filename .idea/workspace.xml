@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="added TestCommonValidator">
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/number/NumberCorrect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/number/NumberError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/TestNumberValidator.java" afterDir="false" />
+    <list default="true" id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="added TestNumberValidator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/utils/NumberUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/utils/NumberUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/NumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/NumberValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/DoubleRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/DoubleRangeValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/FloatRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/FloatRangeValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IntRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IntRangeValidator.java" afterDir="false" />
@@ -72,7 +69,7 @@
       <recent name="com.randomme.classvalidator.validators.string" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestNumberValidator.TestNumberValidatorIncorrect">
+  <component name="RunManager" selected="JUnit.TestNumberValidator">
     <configuration name="TestCommonValidator.TestCommonValidatorCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Class-Validator" />
       <extension name="coverage">
@@ -101,6 +98,21 @@
       <option name="MAIN_CLASS_NAME" value="test.TestCommonValidator" />
       <option name="METHOD_NAME" value="TestCommonValidatorIncorrect" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNumberValidator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Class-Validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestNumberValidator" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,29 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStringValidator.TestStringValidatorIncorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Class-Validator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestStringValidator" />
-      <option name="METHOD_NAME" value="TestStringValidatorIncorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestNumberValidator" />
         <item itemvalue="JUnit.TestNumberValidator.TestNumberValidatorIncorrect" />
         <item itemvalue="JUnit.TestNumberValidator.TestNumberValidatorCorrect" />
         <item itemvalue="JUnit.TestCommonValidator.TestCommonValidatorIncorrect" />
         <item itemvalue="JUnit.TestCommonValidator.TestCommonValidatorCorrect" />
-        <item itemvalue="JUnit.TestStringValidator.TestStringValidatorIncorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +168,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671068086832</updated>
       <workItem from="1671068089699" duration="15577000" />
-      <workItem from="1671249030573" duration="14051000" />
+      <workItem from="1671249030573" duration="14673000" />
     </task>
     <task id="LOCAL-00001" summary="Example Class Validator">
       <created>1671078163009</created>
@@ -209,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671261498186</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added TestNumberValidator">
+      <created>1671263393289</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671263393289</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +235,7 @@
     <MESSAGE value="added TestArrayValidator" />
     <MESSAGE value="added TestStringValidator" />
     <MESSAGE value="added TestCommonValidator" />
-    <option name="LAST_COMMIT_MESSAGE" value="added TestCommonValidator" />
+    <MESSAGE value="added TestNumberValidator" />
+    <option name="LAST_COMMIT_MESSAGE" value="added TestNumberValidator" />
   </component>
 </project>

@@ -14,37 +14,7 @@ public class IntRangeValidator extends NumberValidator {
     }
 
     @Override
-    public boolean isValid( Field field, int value ) {
-        IntRange range = field.getAnnotation( IntRange.class );
-        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
-            this.message = String.format( this.localMessage, field.getName() );
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public boolean isValid( Field field, long value ) {
-        IntRange range = field.getAnnotation( IntRange.class );
-        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
-            this.message = String.format( this.localMessage, field.getName() );
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public boolean isValid( Field field, float value ) {
-        IntRange range = field.getAnnotation( IntRange.class );
-        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
-            this.message = String.format( this.localMessage, field.getName() );
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public boolean isValid( Field field, double value ) {
+    public boolean isValid( Field field, Number value ) {
         IntRange range = field.getAnnotation( IntRange.class );
         if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
             this.message = String.format( this.localMessage, field.getName() );
