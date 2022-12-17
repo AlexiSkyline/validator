@@ -6,7 +6,7 @@ import com.randomme.classvalidator.validators.Validator;
 import java.lang.reflect.Field;
 
 public class IsNotNullValidator implements Validator {
-    private String message = "The field '%s' is a Null value.";
+    private String message;
 
     @Override
     public Class<?> getAnnotation() {
@@ -16,7 +16,7 @@ public class IsNotNullValidator implements Validator {
     @Override
     public boolean isValid( Field field, Object value ) {
         if( value == null ) {
-            this.message = String.format( this.message, field.getName() );
+            this.message= String.format( "The field '%s' is a Null value.", field.getName() );
             return false;
         }
 

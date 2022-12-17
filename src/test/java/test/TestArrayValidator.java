@@ -4,13 +4,12 @@ import com.randomme.classvalidator.ClassValidator;
 import com.randomme.classvalidator.Result;
 import data.array.ArrayCorrect;
 import data.array.ArrayError;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName( "Array Test Validator" )
 public class TestArrayValidator {
     ClassValidator validator;
     Result result;

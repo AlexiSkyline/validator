@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName( "Number Test Validator" )
 public class TestNumberValidator {
     ClassValidator validator;
     Result result;

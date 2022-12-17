@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="added TestNumberValidator">
+    <list default="true" id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="Add tests of the Utils Classes">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/NumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/NumberValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/DoubleRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/DoubleRangeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/FloatRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/FloatRangeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IntRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IntRangeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsNegativeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsNegativeValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsPositiveValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/IsPositiveValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/LongRangeValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/number/LongRangeValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/common/IsNotNullValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/common/IsNotNullValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestArrayValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestArrayValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestCommonValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestCommonValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestStringValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestStringValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,7 @@
         <option value="Interface" />
         <option value="AnnotationType" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,24 +43,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Alexis/OneDrive/Escritorio/portafolio/class-validator-main/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alexis/OneDrive/Escritorio/portafolio/class-validator-main/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test.utils" />
+      <recent name="com.randomme.classvalidator.utils" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="data.number" />
       <recent name="data.common" />
@@ -69,8 +78,24 @@
       <recent name="com.randomme.classvalidator.validators.string" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestNumberValidator">
-    <configuration name="TestCommonValidator.TestCommonValidatorCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestCommonValidator.TestCommonValidatorIncorrect">
+    <configuration name="ArrayUtilsTest.isLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Class-Validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.utils" />
+      <option name="MAIN_CLASS_NAME" value="test.utils.ArrayUtilsTest" />
+      <option name="METHOD_NAME" value="isLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestArrayValidator.TestArrayValidatorIncorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Class-Validator" />
       <extension name="coverage">
         <pattern>
@@ -79,8 +104,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestCommonValidator" />
-      <option name="METHOD_NAME" value="TestCommonValidatorCorrect" />
+      <option name="MAIN_CLASS_NAME" value="test.TestArrayValidator" />
+      <option name="METHOD_NAME" value="TestArrayValidatorIncorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,37 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNumberValidator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Class-Validator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestNumberValidator" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNumberValidator.TestNumberValidatorCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Class-Validator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.TestNumberValidator" />
-      <option name="METHOD_NAME" value="TestNumberValidatorCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestNumberValidator.TestNumberValidatorIncorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Class-Validator" />
       <extension name="coverage">
@@ -149,13 +143,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestStringValidator.TestStringValidatorIncorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Class-Validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestStringValidator" />
+      <option name="METHOD_NAME" value="TestStringValidatorIncorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestNumberValidator" />
-        <item itemvalue="JUnit.TestNumberValidator.TestNumberValidatorIncorrect" />
-        <item itemvalue="JUnit.TestNumberValidator.TestNumberValidatorCorrect" />
         <item itemvalue="JUnit.TestCommonValidator.TestCommonValidatorIncorrect" />
-        <item itemvalue="JUnit.TestCommonValidator.TestCommonValidatorCorrect" />
+        <item itemvalue="JUnit.TestStringValidator.TestStringValidatorIncorrect" />
+        <item itemvalue="JUnit.TestNumberValidator.TestNumberValidatorIncorrect" />
+        <item itemvalue="JUnit.TestArrayValidator.TestArrayValidatorIncorrect" />
+        <item itemvalue="JUnit.ArrayUtilsTest.isLength" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +178,8 @@
       <option name="presentableId" value="Default" />
       <updated>1671068086832</updated>
       <workItem from="1671068089699" duration="15577000" />
-      <workItem from="1671249030573" duration="14673000" />
+      <workItem from="1671249030573" duration="18389000" />
+      <workItem from="1671334388075" duration="1295000" />
     </task>
     <task id="LOCAL-00001" summary="Example Class Validator">
       <created>1671078163009</created>
@@ -212,7 +223,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671263393289</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactoring in NumberValidator its Subclasses">
+      <created>1671263982548</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671263982548</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add tests of the Utils Classes">
+      <created>1671267552638</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671267552638</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +261,8 @@
     <MESSAGE value="added TestStringValidator" />
     <MESSAGE value="added TestCommonValidator" />
     <MESSAGE value="added TestNumberValidator" />
-    <option name="LAST_COMMIT_MESSAGE" value="added TestNumberValidator" />
+    <MESSAGE value="Refactoring in NumberValidator its Subclasses" />
+    <MESSAGE value="Add tests of the Utils Classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests of the Utils Classes" />
   </component>
 </project>

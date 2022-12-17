@@ -10,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@DisplayName( "Common Test Validator" )
 public class TestCommonValidator {
     ClassValidator validator;
     Result result;
@@ -34,10 +35,10 @@ public class TestCommonValidator {
         CommonError correctData = new CommonError();
         this.result = this.validator.validate( correctData );
 
-
         assertFalse( this.result.isValid() );
         assertEquals( this.result.getErrorList().size(), 5 );
         assertEquals( this.result.getErrorList().get(0).getMessage(), "The field 'notNull' is a Null value." );
+        assertEquals( this.result.getErrorList().get(1).getMessage(), "The field 'name' is a Null value." );
         assertTrue( this.result.getErrorList().get(0).getMessage().contains( "is a Null value" ));
         assertFalse( this.result.getErrorList().isEmpty() );
     }
