@@ -17,7 +17,7 @@ public class DoubleRangeValidator extends NumberValidator {
     @Override
     public boolean isValid( Field field, int value ) {
         DoubleRange range = field.getAnnotation( DoubleRange.class );
-        if( !NumberUtils.isRange( value, range.min(), range.max() ) ) {
+        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }
@@ -27,7 +27,7 @@ public class DoubleRangeValidator extends NumberValidator {
     @Override
     public boolean isValid( Field field, long value ) {
         DoubleRange range = field.getAnnotation( DoubleRange.class );
-        if( !NumberUtils.isRange( value, range.min(), range.max() ) ) {
+        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }
@@ -37,7 +37,7 @@ public class DoubleRangeValidator extends NumberValidator {
     @Override
     public boolean isValid( Field field, float value ) {
         DoubleRange range = field.getAnnotation( DoubleRange.class );
-        if( !NumberUtils.isRange( value, range.min(), range.max() ) ) {
+        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }
@@ -47,7 +47,7 @@ public class DoubleRangeValidator extends NumberValidator {
     @Override
     public boolean isValid( Field field, double value ) {
         DoubleRange range = field.getAnnotation( DoubleRange.class );
-        if( !NumberUtils.isRange( value, range.min(), range.max() ) ) {
+        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }

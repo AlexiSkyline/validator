@@ -16,7 +16,7 @@ public class IsPositiveValidator extends NumberValidator {
 
     @Override
     public boolean isValid( Field field, int value ) {
-        if( !NumberUtils.isPositive( value ) ) {
+        if( NumberUtils.isPositive( value ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }
@@ -25,7 +25,7 @@ public class IsPositiveValidator extends NumberValidator {
 
     @Override
     public boolean isValid( Field field, long value ) {
-        if( !NumberUtils.isPositive( value ) ) {
+        if( NumberUtils.isPositive( value ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }
@@ -34,7 +34,7 @@ public class IsPositiveValidator extends NumberValidator {
 
     @Override
     public boolean isValid( Field field, float value ) {
-        if( !NumberUtils.isPositive( value ) ) {
+        if( NumberUtils.isPositive( value ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }
@@ -43,7 +43,7 @@ public class IsPositiveValidator extends NumberValidator {
 
     @Override
     public boolean isValid( Field field, double value ) {
-        if( !NumberUtils.isPositive( value ) ) {
+        if( NumberUtils.isPositive( value ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }
