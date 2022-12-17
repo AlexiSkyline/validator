@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="added error messages">
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/array/ArrayCorrect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/array/ArrayError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/TestArrayValidator.java" afterDir="false" />
+    <list default="true" id="e16fa126-ef18-45fc-87b7-05917019b7e8" name="Changes" comment="added TestArrayValidator">
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/string/StringCorrect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/string/StringError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/TestStringValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/NotContainsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/randomme/classvalidator/validators/string/NotContainsValidator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,27 +59,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="data.string" />
       <recent name="data" />
       <recent name="com.randomme.classvalidator.validators.string" />
       <recent name="com.randomme.classvalidator.validators.number" />
       <recent name="com.randomme.classvalidator.validators.common" />
-      <recent name="com.randomme.classvalidator.annotations.string" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestArrayValidator.TestArrayValidatorIncorrect">
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.randomme.classvalidator.main" />
-      <module name="Class-Validator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.randomme.classvalidator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestStringValidator.TestStringValidatorIncorrect">
     <configuration name="TestArrayValidator$TestArrayValidatorCorrect.SizeInTheRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Class-Validator" />
       <extension name="coverage">
@@ -128,12 +115,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestStringValidator.TestArrayValidatorCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Class-Validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestStringValidator" />
+      <option name="METHOD_NAME" value="TestArrayValidatorCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStringValidator.TestStringValidatorIncorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Class-Validator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.TestStringValidator" />
+      <option name="METHOD_NAME" value="TestStringValidatorIncorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestStringValidator.TestStringValidatorIncorrect" />
+        <item itemvalue="JUnit.TestStringValidator.TestArrayValidatorCorrect" />
         <item itemvalue="JUnit.TestArrayValidator.TestArrayValidatorIncorrect" />
         <item itemvalue="JUnit.TestArrayValidator.TestArrayValidatorCorrect" />
         <item itemvalue="JUnit.TestArrayValidator$TestArrayValidatorCorrect.SizeInTheRange" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671068086832</updated>
       <workItem from="1671068089699" duration="15577000" />
-      <workItem from="1671249030573" duration="8542000" />
+      <workItem from="1671249030573" duration="10687000" />
     </task>
     <task id="LOCAL-00001" summary="Example Class Validator">
       <created>1671078163009</created>
@@ -162,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671254089617</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added TestArrayValidator">
+      <created>1671257660733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671257660733</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +209,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Example Class Validator" />
     <MESSAGE value="added error messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="added error messages" />
+    <MESSAGE value="added TestArrayValidator" />
+    <option name="LAST_COMMIT_MESSAGE" value="added TestArrayValidator" />
   </component>
 </project>

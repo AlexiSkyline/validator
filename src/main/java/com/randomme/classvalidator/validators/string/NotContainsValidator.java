@@ -14,7 +14,7 @@ public class NotContainsValidator extends StringValidator {
     @Override
     public boolean isValid( Field field, String value ) {
         NotContains annotation = field.getAnnotation( NotContains.class );
-        if( !value.contains( annotation.value() ) ) {
+        if( value.contains( annotation.value() ) ) {
             this.message = String.format( "The value of the property '%s' does not contain the value '%s' in '%s'.", field.getName(), annotation.value(), value );
             return false;
         }
