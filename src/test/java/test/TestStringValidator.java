@@ -31,8 +31,8 @@ public class TestStringValidator {
     @DisplayName( "Testing String validation with incorrect fields" )
     void TestStringValidatorIncorrect() {
         this.validator = new ClassValidator();
-        StringError correctData = new StringError();
-        this.result = validator.validate( correctData );
+        StringError incorrectData = new StringError();
+        this.result = validator.validate( incorrectData );
 
         assertFalse( this.result.isValid() );
         assertTrue( this.result.getErrorList().size() > 0 );

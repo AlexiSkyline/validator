@@ -31,8 +31,8 @@ public class TestArrayValidator {
     @DisplayName( "Testing array validation with Incorrect input" )
     void TestArrayValidatorIncorrect() {
         this.validator = new ClassValidator();
-        ArrayError IncorrectData = new ArrayError();
-        this.result = validator.validate( IncorrectData );
+        ArrayError incorrectData = new ArrayError();
+        this.result = validator.validate( incorrectData );
 
         assertFalse( this.result.isValid() );
         assertTrue( this.result.getErrorList().size() > 0 );

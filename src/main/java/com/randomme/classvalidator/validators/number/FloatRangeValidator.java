@@ -17,7 +17,7 @@ public class FloatRangeValidator extends NumberValidator {
     @Override
     public boolean isValid( Field field, Number value ) {
         FloatRange range = field.getAnnotation( FloatRange.class );
-        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
+        if( !NumberUtils.isRange( value, range.min(), range.max() ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }

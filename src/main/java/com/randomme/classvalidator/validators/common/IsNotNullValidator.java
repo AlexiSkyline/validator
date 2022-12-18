@@ -19,7 +19,6 @@ public class IsNotNullValidator implements Validator {
             this.message= String.format( "The field '%s' is a Null value.", field.getName() );
             return false;
         }
-
         return true;
     }
 

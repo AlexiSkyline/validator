@@ -17,7 +17,7 @@ public class LongRangeValidator extends NumberValidator {
     @Override
     public boolean isValid( Field field, Number value ) {
         LongRange range = field.getAnnotation( LongRange.class );
-        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
+        if( !NumberUtils.isRange( value, range.min(), range.max() ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }

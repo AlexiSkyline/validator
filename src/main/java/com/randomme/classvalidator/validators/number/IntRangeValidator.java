@@ -16,7 +16,7 @@ public class IntRangeValidator extends NumberValidator {
     @Override
     public boolean isValid( Field field, Number value ) {
         IntRange range = field.getAnnotation( IntRange.class );
-        if( NumberUtils.isRange( value, range.min(), range.max() ) ) {
+        if( !NumberUtils.isRange( value, range.min(), range.max() ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }

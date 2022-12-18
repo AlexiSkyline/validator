@@ -20,7 +20,6 @@ public class SizeValidator extends ArrayValidator {
                     , field.getName(), isArrayLength.min(), isArrayLength.max() );
             return false;
         }
-
         return true;
     }
 }

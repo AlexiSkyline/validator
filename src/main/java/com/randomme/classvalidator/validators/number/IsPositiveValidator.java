@@ -16,7 +16,7 @@ public class IsPositiveValidator extends NumberValidator {
 
     @Override
     public boolean isValid( Field field, Number value ) {
-        if( NumberUtils.isPositive( value ) ) {
+        if( !NumberUtils.isPositive( value ) ) {
             this.message = String.format( this.localMessage, field.getName() );
             return false;
         }

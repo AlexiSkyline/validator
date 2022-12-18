@@ -10,7 +10,6 @@ public abstract class NumberValidator implements Validator {
         if( value instanceof Number ) {
             return this.isValid( field, ((Number) value).doubleValue() );
         }
-
         return true;
     }
 

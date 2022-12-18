@@ -32,8 +32,8 @@ public class TestCommonValidator {
     @DisplayName( "Testing Common validation with incorrect fields" )
     void TestCommonValidatorIncorrect() {
         this.validator = new ClassValidator();
-        CommonError correctData = new CommonError();
-        this.result = this.validator.validate( correctData );
+        CommonError incorrectData = new CommonError();
+        this.result = this.validator.validate( incorrectData );
 
         assertFalse( this.result.isValid() );
         assertEquals( this.result.getErrorList().size(), 5 );
